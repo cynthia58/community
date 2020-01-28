@@ -1,4 +1,4 @@
-package life.majiang.community.community.dto;
+package life.majiang.community.dto;
 
 /**
  * @ 类    名： GithubUser
@@ -34,5 +34,14 @@ public class GithubUser {
 
     public void setBio(String bio) {
         this.bio = bio;
+    }
+
+    @Override
+    public String toString() {
+        return "GithubUser{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                ", bio='" + bio + '\'' +
+                '}';
     }
 }
