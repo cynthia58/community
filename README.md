@@ -14,7 +14,8 @@
 [Git](https://git-scm.com/download) <br/>
 [Visual Paradigm](https://www.visual-paradigm.com/cn/) <br/>
 [OkHttp](https://square.github.io/okhttp/) <br/>
-[Flyway](https://flywaydb.org/getstarted/firststeps/maven)
+[Flyway](https://flywaydb.org/getstarted/firststeps/maven) <br/>
+[Lombok](https://projectlombok.org)
 
 ## 脚本
 ```sql
