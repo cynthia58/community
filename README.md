@@ -13,7 +13,8 @@
 ## 工具
 [Git](https://git-scm.com/download) <br/>
 [Visual Paradigm](https://www.visual-paradigm.com/cn/) <br/>
-[OkHttp](https://square.github.io/okhttp/)
+[OkHttp](https://square.github.io/okhttp/) <br/>
+[Flyway](https://flywaydb.org/getstarted/firststeps/maven)
 
 ## 脚本
 ```sql
@@ -26,4 +27,8 @@ create table USER
 	GMT_CREATE BIGINT,
 	GMT_MODIFIED BIGINT
 );
+```
+
+```bash
+mvn flyway:migrate
 ```
