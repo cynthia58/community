@@ -10,7 +10,6 @@ import java.util.List;
  * @ 描    述： PageDTO类
  * @ 创建时间： 2020/1/30
  * @ 作    者： KANGNX
- * @ 版权所有： 江苏宇峰信息科技有限公司
  */
 @Data
 public class PaginationDTO {

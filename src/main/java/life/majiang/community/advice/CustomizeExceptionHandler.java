@@ -16,7 +16,6 @@ import javax.servlet.http.HttpServletRequest;
  * @ 描    述： CustomizeExceptionHandler类
  * @ 创建时间： 2020/1/31
  * @ 作    者： KANGNX
- * @ 版权所有： 江苏宇峰信息科技有限公司
  */
 @ControllerAdvice
 public class CustomizeExceptionHandler {

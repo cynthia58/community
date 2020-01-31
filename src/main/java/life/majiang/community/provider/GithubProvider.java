@@ -13,7 +13,6 @@ import java.io.IOException;
  * @ 描    述： GithubProvider类
  * @ 创建时间： 2020/1/27
  * @ 作    者： KANGNX
- * @ 版权所有： 江苏宇峰信息科技有限公司
  */
 @Component
 public class GithubProvider {
