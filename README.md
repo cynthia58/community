@@ -1,5 +1,23 @@
 ## 码匠社区
 
+## 部署
+### 依赖
+- Git
+- JDK
+- MAVEN
+- MYSQL
+### 步骤
+- yum update
+- yum install git
+- mkdir App
+- cd App
+- git clone https://github.com/cynthia58/community.git
+- yum install maven
+- mvn -v
+- mvn compile package
+- 
+
+
 ## 资料
 [Spring文档](https://spring.io/guides) <br/>
 [Spring Web](https://spring.io/guides/gs/serving-web-content/) <br/>

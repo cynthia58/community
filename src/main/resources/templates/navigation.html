@@ -26,7 +26,8 @@
                     <li th:if="${session.user != null}">
                         <a href="/publish">提问</a>
                     </li>
-                    <li><a href="/profile/replies">通知 <span class="badge" th:text="${session.unreadCount}"></span></a></li>
+                    <li><a href="/profile/replies">通知 <span class="badge" th:text="${session.unreadCount}"></span></a>
+                    </li>
                     <li class="dropdown" th:if="${session.user != null}">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                            aria-expanded="false">
@@ -39,7 +40,7 @@
                         </ul>
                     </li>
                     <li th:if="${session.user == null}">
-                        <a href="https://github.com/login/oauth/authorize?client_id=138b71f92267f8e3f286&redirect_uri=http://localhost:8887/callback&scope=user&state=1">登录</a>
+                        <a th:href="@{https://github.com/login/oauth/authorize(client_id='138b71f92267f8e3f286',redirect_url=${#httpServletRequest.getRequestURL()+'callback'}, scope='user', state=1)}">登录</a>
                     </li>
                 </ul>
             </div>
