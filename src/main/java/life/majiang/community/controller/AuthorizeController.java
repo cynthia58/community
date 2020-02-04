@@ -24,7 +24,6 @@ import java.util.UUID;
  * @ 作    者： KANGNX
  */
 @Controller
-@Slf4j
 public class AuthorizeController {
 
     @Autowired
