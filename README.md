@@ -14,10 +14,10 @@
 - git clone https://github.com/cynthia58/community.git
 - yum install maven
 - mvn -v
-- mvn compile package
 - cp src/main/resources/application.properties src/main/resources/application-production.properties
 - vim src/main/resources/application-production.properties
-- mvn package
+- mvn flyway:migrate
+- mvn compile package
 - java -jar -Dspring.profiles.active=production target/community-0.0.1-SNAPSHOT.jar
 - ps -aux|grep java
 - git pull

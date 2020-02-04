@@ -125,7 +125,7 @@
                     <input type="hidden" id="question_id" th:value="${question.id}"></input>
 
                     <textarea class="form-control comment" rows="6" id="comment_content"></textarea>
-                    <button type="button" class="btn btn-success btn-comment" onclick="post()">回复</button>
+                    <button type="button" class="btn btn-success btn-comment" onclick="post(this)" th:data-url="${#httpServletRequest.getRequestURL()}">回复</button>
                 </div>
             </div>
         </div>
