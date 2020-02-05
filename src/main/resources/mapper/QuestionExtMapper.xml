@@ -48,7 +48,7 @@
         select * from QUESTION
         <where>
             <if test="search != null">
-                title REGEXP '['+#{search}+']'
+                title REGEXP #{search}
             </if>
         </where>
         order by gmt_create desc
