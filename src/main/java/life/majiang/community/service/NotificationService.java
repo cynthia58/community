@@ -40,8 +40,8 @@ public class NotificationService {
         Integer totalCount = (int) notificationMapper.countByExample(notificationExample);
 
         Integer totalPage = (totalCount % size == 0) ? (totalCount / size) : (totalCount / size + 1);
-        page = page < 1 ? 1 : page;
         page = page > totalPage ? totalPage : page;
+        page = page < 1 ? 1 : page;
         paginationDTO.setPagination(totalPage, page);
 
         Integer offset = size * (page - 1);
