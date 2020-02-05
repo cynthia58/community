@@ -49,7 +49,8 @@ public class QuestionService {
 
         PaginationDTO<QuestionDTO> paginationDTO = new PaginationDTO();
         QuestionQueryDTO questionQueryDTO = new QuestionQueryDTO();
-        questionQueryDTO.setSearch(search);
+        System.err.println("search:"+search);
+        questionQueryDTO.setSearch("["+search.trim()+"]");
         Integer totalCount = questionExtMapper.countBySearch(questionQueryDTO);
         Integer totalPage = (totalCount % size == 0) ? (totalCount / size) : (totalCount / size + 1);
         page = page < 1 ? 1 : page;
