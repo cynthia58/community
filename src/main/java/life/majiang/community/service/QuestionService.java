@@ -49,8 +49,6 @@ public class QuestionService {
 
         PaginationDTO<QuestionDTO> paginationDTO = new PaginationDTO();
         QuestionQueryDTO questionQueryDTO = new QuestionQueryDTO();
-        System.err.println("search:"+search);
-        questionQueryDTO.setSearch("["+search.trim()+"]");
         Integer totalCount = questionExtMapper.countBySearch(questionQueryDTO);
         Integer totalPage = (totalCount % size == 0) ? (totalCount / size) : (totalCount / size + 1);
         page = page < 1 ? 1 : page;
@@ -58,7 +56,7 @@ public class QuestionService {
         paginationDTO.setPagination(totalPage, page);
 
         Integer offset = size * (page - 1);
-
+        System.err.println("size:"+size+"; page:"+page);
         questionQueryDTO.setSize(size);
         questionQueryDTO.setPage(offset);
         List<Question> questions = questionExtMapper.selectBySearch(questionQueryDTO);
